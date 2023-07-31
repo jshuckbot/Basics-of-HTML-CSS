@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Open+Sans:wght@600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+}
+
+
+
+.center{
+    padding-right: calc(50% - 800px);
+    padding-left: calc(50% - 800px);
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-around;
+    background: #222222;
+    padding-top: 26px;
+    padding-bottom: 20px;
+}
+
+
+.header__label {
+    display: flex;
+    align-items: center;
+    gap: 63px;
+    background: #F1E4E6;
+}
+
+main {
+    margin-top: 65px;
+}
+
+.offer {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    gap: 30px;
+    justify-content: center;
+    
+}
+
+.content {
+    text-align: center;
+    padding-top: 96px;
+    padding-bottom: 60px;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.text {
+    color: #9F9F9F;
+    font-size: 14px;
+    margin-top: 6px;
+    margin-bottom: 48px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    justify-content: center;
+    gap: 30px;
+    text-align: left;
+}
+
+.item {
+    background: #F8F8F8;
+}
+
+.item__content {
+    padding: 24px 16px;
+}
+
+.subtitle {
+    margin-bottom: 16px;
+    color: #000;
+    font-size: 13px;
+}
+
+.product_text {
+    color: #5D5D5D;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 16px;
+}
+
+.price {
+    color: #F16D7F;
+    font-size: 16px;
+/*    margin-bottom: 24px;*/
+}
+
+button {
+    margin-top: 48px;
+    border: 1px solid;
+    width: 212px;
+    height: 48px;
+    background: none;
+    color: #F26376;
+    font-size: 16px;
+    cursor: pointer;
+}
