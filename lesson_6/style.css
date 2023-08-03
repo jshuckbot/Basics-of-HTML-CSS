@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Open+Sans:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Open+Sans:wght@600;700;800&display=swap');
 
 * {
     margin: 0;
@@ -12,7 +12,10 @@ body {
     font-weight: 400;
 }
 
-
+img {
+    display: block;
+    max-width: 100%;
+}
 
 .center{
     padding-right: calc(50% - 800px);
@@ -25,14 +28,52 @@ body {
     background: #222222;
     padding-top: 26px;
     padding-bottom: 20px;
+    min-width: auto;
 }
 
+.menu_button {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.menu_group {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    padding-right: 42px;
+}
+
+.label_brand {
+    display: flex;
+    min-width: 405px;
+    gap: 16px;
+    align-items: center;
+}
+
+.brand__title {
+    color: #222;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.brand__subtitle {
+    color: #222;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.span_luxerious {
+    color: #F16D7F;
+}
 
 .header__label {
     display: flex;
     align-items: center;
     gap: 63px;
     background: #F1E4E6;
+    justify-content: flex-start;
+    padding-right: 331px;
 }
 
 main {
@@ -42,9 +83,12 @@ main {
 .offer {
     display: grid;
     grid-template-columns: repeat(3, 360px);
-    gap: 30px;
+    grid-gap: 30px;
     justify-content: center;
-    
+}
+
+.offer__item_4 {
+    grid-column: span 3;
 }
 
 .content {
@@ -68,7 +112,7 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 360px);
     justify-content: center;
-    gap: 30px;
+    grid-gap: 30px;
     text-align: left;
 }
 
@@ -96,7 +140,6 @@ main {
 .price {
     color: #F16D7F;
     font-size: 16px;
-/*    margin-bottom: 24px;*/
 }
 
 button {
@@ -108,4 +151,57 @@ button {
     color: #F26376;
     font-size: 16px;
     cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .center{
+        padding-right: calc(50% - 384px);
+        padding-left: calc(50% - 384px);
+    }
+
+    .header__label {
+        gap: 39px;
+        padding-right: 33px;
+    }
+
+     .label_brand {
+        min-width: 311px;
+    }
+
+    .brand__title {
+        font-size: 44px;
+    }
+
+    .brand__subtitle {
+        font-size: 24px;
+    }
+
+    .offer {
+            display: grid;
+            grid-template-columns: repeat(3, 232px);
+            grid-gap: 19px;
+            justify-content: center;
+        }
+
+    .content {
+        text-align: center;
+        padding-top: 110px;
+        padding-bottom: 60px;
+    }
+
+    .text {
+        color: #9F9F9F;
+        font-size: 14px;
+        margin-top: 3px;
+        margin-bottom: 73px;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 360px);
+        grid-gap: 16px;
+    }
+
+    button {
+        margin-top: 32px;
+    }
 }
