@@ -31,6 +31,11 @@ img {
     min-width: auto;
 }
 
+.menu_logo {
+    display: flex;
+    gap: 41px;
+}
+
 .menu_button {
     display: flex;
     justify-content: space-between;
@@ -44,11 +49,17 @@ img {
     padding-right: 42px;
 }
 
+.button_menu {
+    background: none;
+    border: 0px;
+}
+
 .label_brand {
     display: flex;
     min-width: 405px;
     gap: 16px;
     align-items: center;
+    justify-content: center;
 }
 
 .brand__title {
@@ -72,7 +83,7 @@ img {
     align-items: center;
     gap: 63px;
     background: #F1E4E6;
-    justify-content: flex-start;
+    justify-content: center;
     padding-right: 331px;
 }
 
@@ -87,8 +98,41 @@ main {
     justify-content: center;
 }
 
+.offer__items {
+    position: relative;
+    text-align: center;
+}
+
 .offer__item_4 {
     grid-column: span 3;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(33, 22, 22, 0.7);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.centered h3 {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.centered h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #f16d7f;
 }
 
 .content {
@@ -142,7 +186,7 @@ main {
     font-size: 16px;
 }
 
-button {
+.button_down {
     margin-top: 48px;
     border: 1px solid;
     width: 212px;
@@ -159,6 +203,12 @@ button {
         padding-left: calc(50% - 384px);
     }
 
+    .header__menu {
+        padding-left: 32px;
+        padding-right: 27px;
+        justify-content: space-between;
+    }
+
     .header__label {
         gap: 39px;
         padding-right: 33px;
@@ -171,26 +221,21 @@ button {
     .brand__title {
         font-size: 44px;
     }
-
     .brand__subtitle {
         font-size: 24px;
     }
 
     .offer {
-            display: grid;
             grid-template-columns: repeat(3, 232px);
             grid-gap: 19px;
-            justify-content: center;
         }
 
     .content {
-        text-align: center;
         padding-top: 110px;
         padding-bottom: 60px;
     }
 
     .text {
-        color: #9F9F9F;
         font-size: 14px;
         margin-top: 3px;
         margin-bottom: 73px;
@@ -201,7 +246,107 @@ button {
         grid-gap: 16px;
     }
 
-    button {
+    .button_down {
         margin-top: 32px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .center{
+        padding-right: calc(50% - 160px);
+        padding-left: calc(50% - 160px);
+    }
+
+    main {
+        margin-top: 64px;
+    }
+
+    .header__menu {
+        padding-left: 16px;
+        padding-right: 26px;
+        justify-content: space-between;
+    }
+
+    .menu_group {
+        padding-right: 0px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .label_center {
+        padding: 148px 56px;
+    }
+
+    .label_brand {
+        min-width: 263px;
+    }
+
+    .brand__title {
+        font-size: 38px;
+    }
+    .brand__subtitle {
+        font-size: 20px;
+    }
+
+    .offer {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 343px;
+        gap: 32px;
+    }
+
+    .offer__item_1 {
+        grid-column: span 3;
+        grid-row: 1;
+    }
+
+    .offer__item_2 {
+        grid-column: span 3;
+        grid-row: 2;
+    }
+
+    .offer__item_3 {
+        grid-column: span 3;
+        grid-row: 3;
+    }
+
+    .offer__item_4 {
+        grid-column: span 3;
+        grid-row: 4;
+    }
+
+    .content {
+        padding-top: 64px;
+        padding-bottom: 85px;
+    }
+
+    .text {
+        margin-bottom: 64px;
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        grid-gap: 16px;
+        text-align: left;
+    }
+
+    .item__content {
+        padding: 24px 18px;
+    }
+
+    .subtitle {
+        margin-bottom: 12px;
+    }
+
+    .product_text {
+        margin-bottom: 18px;
+    }
+
+    .button_down {
+        margin-top: 48px;
     }
 }
