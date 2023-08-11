@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Open+Sans:wght@600;700;800&display=swap');
 
+@keyframes pulsate-fwd {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+  50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+  100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -53,6 +69,11 @@ img {
 .button_menu {
     background: none;
     border: 0px;
+    cursor: pointer;
+}
+
+.button_menu:hover {
+    animation: pulsate-fwd 0.5s ease-in-out 1 both;
 }
 
 .label_brand {
@@ -169,6 +190,48 @@ main {
     padding: 24px 16px;
 }
 
+.rect_basket {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(58, 56, 56, 0.86);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.item:hover .rect_basket{
+    opacity: 1;
+}
+
+.basket {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.basket_add {
+    width: 138px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    background: none;
+    border: 1px solid #FFFFFF;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
+
 .subtitle {
     margin-bottom: 16px;
     color: #000;
@@ -196,6 +259,12 @@ main {
     color: #F26376;
     font-size: 16px;
     cursor: pointer;
+    transition: all 0.3s;
+}
+
+.button_down:hover {
+    background: #F16D7F;
+    color: #FFF;
 }
 
 .footer__header {
@@ -312,6 +381,11 @@ main {
     border-bottom-right-radius: 20px;
     vertical-align: middle;
     border: none;
+
+}
+
+.button__subscribe:hover{
+    animation: pulsate-fwd 0.5s ease-in-out 1 both;
 }
 
 .brand_box {
@@ -344,6 +418,15 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.social:hover  {
+    background: #F16D7F;
+}
+
+.icon:hover path {
+    fill: #FFFFFF;
+    background-color: #f00;
 }
 
 
