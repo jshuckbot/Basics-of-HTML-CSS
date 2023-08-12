@@ -356,6 +356,7 @@ main {
     text-align: center;
 }
 
+
 .subscribe__input {
     width: 256px;
     height: 49px;
@@ -512,6 +513,7 @@ main {
         margin-bottom: 27px;
     }
 
+
     .brand_box {
         padding-left: 32px;
         padding-right: 32px;
@@ -657,8 +659,28 @@ main {
         margin-bottom: 22px;
     }
 
+    .subscribe__input {
+        width: 200px;
+        height: 49px;
+        font-size: 14px;
+        line-height: 17px;
+        background: #E1E1E1;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        overflow: hidden;
+        padding-left: 22px;
+        border: none;
+    }
+
     .brand_box {
-        padding-left: 32px;
-        padding-right: 32px;
+        padding: 43px 0px 9px 0px;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .flip {
+        order: 1;
     }
 }
