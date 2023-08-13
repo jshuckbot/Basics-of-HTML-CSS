@@ -312,7 +312,7 @@ main {
 
 
 .footer__blur {
-    padding: auto;
+    padding: 0;
     background: rgba(244, 244, 244, 0.7);
     height: 448px;
     display: flex;
@@ -628,8 +628,8 @@ main {
     }
 
     .footer__header {
-        padding-left: auto;
-        padding-right: auto;
+        padding-left: 0;
+        padding-right: 0;
         flex-wrap: wrap;
         flex-direction: column;
         gap: 45px;
@@ -642,7 +642,7 @@ main {
     }
 
     .footer__blur {
-        padding: auto;
+        padding: 0;
         padding-top: 64px;
         gap: 59px;
         flex-wrap: wrap;
